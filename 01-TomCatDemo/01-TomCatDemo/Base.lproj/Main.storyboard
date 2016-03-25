@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry_00.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ssI-M4-pBs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlH-ar-S57">
+                                <rect key="frame" x="20" y="411" width="60" height="60"/>
+                                <state key="normal" image="cymbal.png"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXm-yP-TaQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poY-2W-LaL">
+                                <rect key="frame" x="20" y="473" width="60" height="60"/>
+                                <state key="normal" image="drink.png"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipr-PX-TaE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzH-Gz-kDX">
+                                <rect key="frame" x="20" y="541" width="60" height="60"/>
+                                <state key="normal" image="eat.png"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vn2-SZ-QO0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BF2-TP-FoG">
+                                <rect key="frame" x="295" y="411" width="60" height="60"/>
+                                <state key="normal" image="fart.png"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3a-TA-9A9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwn-Zr-ChO">
+                                <rect key="frame" x="295" y="473" width="60" height="60"/>
+                                <state key="normal" image="pie.png"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qrs-D7-Va0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utW-W5-7zG">
+                                <rect key="frame" x="295" y="541" width="60" height="60"/>
+                                <state key="normal" image="scratch.png"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAD-ME-MMt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="107" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p9-cy-0R5">
+                                <rect key="frame" x="82" y="116" width="211" height="204"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xdp-ua-3eH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="109" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3x-Lq-BV3">
+                                <rect key="frame" x="129" y="603" width="53" height="44"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KbN-ya-bVj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="110" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g18-Ed-2ya">
+                                <rect key="frame" x="185" y="603" width="53" height="44"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hge-oT-Kuy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="111" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x1-tI-CYw">
+                                <rect key="frame" x="254" y="541" width="39" height="65"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PlD-As-OsL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="108" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zap-3u-ijC">
+                                <rect key="frame" x="136" y="473" width="102" height="92"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kgC-oU-h7O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="ssI-M4-pBs" id="gwx-vf-Jiy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339.5" y="429.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="angry_00.jpg" width="640" height="1024"/>
+        <image name="cymbal.png" width="60" height="60"/>
+        <image name="drink.png" width="60" height="60"/>
+        <image name="eat.png" width="60" height="60"/>
+        <image name="fart.png" width="60" height="60"/>
+        <image name="pie.png" width="60" height="60"/>
+        <image name="scratch.png" width="60" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1/6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0q-Yw-ZGD">
+                                <rect key="frame" x="139" y="77" width="97" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEF-Gu-q9n">
+                                <rect key="frame" x="81" y="146" width="213" height="152"/>
+                            </imageView>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbF-lY-bS0">
+                                <rect key="frame" x="20" y="198" width="48" height="48"/>
+                                <state key="normal" image="left_normal.png"/>
+                                <state key="disabled" image="left_disable.png"/>
+                                <state key="highlighted" image="left_highlighted.png"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rba-Ta-VnU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28R-Mv-w6X">
+                                <rect key="frame" x="307" y="198" width="48" height="48"/>
+                                <state key="normal" image="right_normal.png"/>
+                                <state key="disabled" image="right_disable.png"/>
+                                <state key="highlighted" image="right_highlighted.png"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nX6-hW-Z35"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZM-4z-ddq">
+                                <rect key="frame" x="20" y="331" width="335" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSG-SN-M4R">
+                                <rect key="frame" x="81" y="146" width="213" height="152"/>
+                                <connections>
+                                    <action selector="gotoWebView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wRm-ld-LMo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="descLabel" destination="JZM-4z-ddq" id="dgI-Bw-FHv"/>
+                        <outlet property="imageView" destination="QEF-Gu-q9n" id="c0M-e9-XtL"/>
+                        <outlet property="indexLabel" destination="G0q-Yw-ZGD" id="lfp-ze-Frv"/>
+                        <outlet property="leftBtn" destination="NbF-lY-bS0" id="WOw-jb-Vmg"/>
+                        <outlet property="rightBtn" destination="28R-Mv-w6X" id="10S-zF-aKy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.5" y="429.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left_disable.png" width="96" height="96"/>
+        <image name="left_highlighted.png" width="96" height="96"/>
+        <image name="left_normal.png" width="96" height="96"/>
+        <image name="right_disable.png" width="96" height="96"/>
+        <image name="right_highlighted.png" width="96" height="96"/>
+        <image name="right_normal.png" width="96" height="96"/>
+    </resources>
+</document>

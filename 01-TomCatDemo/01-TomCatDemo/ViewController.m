@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+//点击btn时如果没有结束，不鞥点击别的按钮
 -(void)startAnimationWithImageName:(NSString *)imageName imageCount:(NSInteger)imgCount{
     if (_imageView.isAnimating) {
         return ;
